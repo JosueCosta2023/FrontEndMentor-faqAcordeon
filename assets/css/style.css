@@ -1,0 +1,117 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Work Sans', sans-serif;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--light-pink);
+}
+
+.container .ilustracao{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.container .acordeon{
+    width: 600px;
+    height: 565px;
+    background-color: var(--white);
+    position: absolute;
+    z-index: 2;
+    border-radius: 16px;
+    padding: 40px 40px;
+}
+
+.container .acordeon .acordeon-title{
+    width: 100%;
+    font-size: 5.6rem;
+    font-weight: 700;
+    color: var(--dark-purple);
+    margin-bottom: 32px;
+}
+
+.container .acordeon .acordeon-title .ilustracao{
+    width: 40px;
+    height: 40px;
+}
+
+.container .acordeon .acordeon-itens{
+    width: 100%;
+    height: auto;
+}
+
+.container .acordeon .acordeon-itens .item{
+    border-bottom: 1px solid var(--light-pink);
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    background-image: url('../images/icon-plus.svg');
+    background-repeat: no-repeat;
+    background-position:top -3px right 0;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+.container .acordeon .acordeon-itens .item:last-child{
+    border-bottom: none;
+}
+
+.container .acordeon .acordeon-itens .item .question{
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 90%;
+    margin-bottom: 22px;
+    
+}
+
+.container .acordeon .acordeon-itens .item .response{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    width: 90%;
+    display: none;  
+}
+
+/* Item ativo */
+
+.container .acordeon .acordeon-itens .item.ativo{
+    background-image: url('../images/icon-minus.svg');
+}
+
+.container .acordeon .acordeon-itens .item.ativo .response{
+    display: block;
+}
+
+
+@media(max-width: 768px){
+    .container .acordeon{
+        width: 279px;
+        height: auto;
+        padding: 24px;
+        border-radius: 8px;
+    }
+
+    .container .acordeon .acordeon-title{
+        font-size: 3.2rem;
+    }
+
+    .container .acordeon .acordeon-itens .item .question{
+        font-size: 1.6rem;
+    }
+
+    .container .acordeon .acordeon-itens .item .response{
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
