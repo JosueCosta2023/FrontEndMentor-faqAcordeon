@@ -69,7 +69,11 @@ html{
     font-weight: 600;
     width: 90%;
     margin-bottom: 22px;
-    
+    color: #301534;
+}
+
+.container .acordeon .acordeon-itens .item .question:hover{
+    color: #AD28EB;
 }
 
 .container .acordeon .acordeon-itens .item .response{
@@ -78,6 +82,7 @@ html{
     line-height: 150%;
     width: 90%;
     display: none;  
+    color: #8B6990;
 }
 
 /* Item ativo */
